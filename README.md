@@ -1,14 +1,20 @@
 # Projeto Tabela Hash
 
-João Vitor
+## Integrantes
 
-João Gabriel
+- João Vitor
+- João Gabriel
+- Renato Hideki
 
+## Descrição
 
-Renato Hideki
+Sistema de autenticação simples desenvolvido em C utilizando tabela hash.
 
+O projeto realiza cadastro, login e remoção de usuários utilizando estruturas de dados como tabela hash e lista encadeada.
 
-Sistema de autenticação simples em C utilizando tabela hash.
+As senhas não são armazenadas diretamente. O sistema salva apenas o valor hash da senha para validação durante o login.
+
+---
 
 ## Funcionalidades
 
@@ -17,16 +23,49 @@ Sistema de autenticação simples em C utilizando tabela hash.
 - Remoção de usuários
 - Impressão da tabela hash
 - Tratamento de colisões com lista encadeada
+- Liberação de memória dinâmica
 
-## Tecnologias utilizadas
+---
+
+## Tecnologias Utilizadas
 
 - Linguagem C
 - Structs
 - Ponteiros
-- Alocação dinâmica
+- Alocação dinâmica (`malloc` e `free`)
 - Tabela Hash
+- Lista Encadeada
 
-## Como compilar
+---
+
+## Estrutura do Projeto
+
+- `main.c` → menu principal e interação com o usuário
+- `hash.c` → implementação das funções da tabela hash
+- `hash.h` → structs e protótipos das funções
+
+---
+
+## Estratégia de Colisão
+
+O projeto utiliza encadeamento separado com lista encadeada para tratar colisões na tabela hash.
+
+---
+
+## Funções Implementadas
+
+- `criaHash()`
+- `gerarHashSenha()`
+- `funcaoHash()`
+- `inserirHash()`
+- `buscaHash()`
+- `removerHash()`
+- `imprimirHash()`
+- `liberarHash()`
+
+---
+
+## Como Compilar
 
 ```bash
 gcc main.c hash.c -o programa
