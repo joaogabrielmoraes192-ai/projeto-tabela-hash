@@ -1,5 +1,10 @@
 # Projeto Tabela Hash
 
+João Vitor
+João Gabriel
+Renato Hideki
+
+
 Sistema de autenticação simples em C utilizando tabela hash.
 
 ## Funcionalidades
